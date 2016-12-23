@@ -1,3 +1,20 @@
+<?php 
+/**
+ * The template is for getting the template parts of main-content
+ *
+ *
+ * @author 		PcCowboy
+ * @package 	woo-theme_woobsite/template_parts
+ * @version     1
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	//silence is golden :D
+	exit; // Exit if accessed directly
+}
+
+?>
+
 <!-- Section main-content  -->
 <section  id="main-content">
 

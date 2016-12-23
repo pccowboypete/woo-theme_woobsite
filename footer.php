@@ -1,3 +1,12 @@
+<?php
+
+if ( ! defined( 'ABSPATH' ) ) {
+	//silence is golden :D
+	exit; // Exit if accessed directly
+}
+
+?>
+
 <!-- Footer -->
     <footer class="text-center">
       <div class="container-fluid">

@@ -1,3 +1,20 @@
+<?php 
+/**
+ * The template is for providing the display of right content
+ *
+ *
+ * @author 		PcCowboy
+ * @package 	woo-theme_woobsite/template_parts
+ * @version     1
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	//silence is golden :D
+	exit; // Exit if accessed directly
+}
+
+?>
+
 <!-- right-content -->
 <div class="col-sm-2 right-content">
 	<div class="col-xs-12">

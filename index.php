@@ -1,7 +1,15 @@
+<?php
+
+if ( ! defined( 'ABSPATH' ) ) {
+	//silence is golden :D
+	exit; // Exit if accessed directly
+}
+
+?>
 
 <?php get_header(); ?>
 
-	<?php get_template_part('template_parts/main-content');?>
+	<?php get_template_part('template_parts/main-content', 'main-wrapper');?>
 
 
   <!-- Section section2  -->
