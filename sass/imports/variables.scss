@@ -1,0 +1,66 @@
+$color1 : #3B444B;
+$color2 : #B2BEB5;
+$color3 : #6E7F80;
+$color4 : #DBE9F4;
+$color5 : #3B3C36;
+$color6 : #9966CC;
+$color7 : #008000;
+$color8 : #E0218A;
+$color9 : #BF4F51;
+$color10 : #3B3C36;
+$color11 : #B5A642;
+$color12 : #800020;
+
+
+.fontSize1{
+  @include FontSize1;
+}
+.fontSize2{
+  @include FontSize2;
+}
+.fontSize3{
+  @include FontSize3;
+}
+.fontSize4{
+  @include FontSize4;
+}
+.fontSize5{
+  @include FontSize5;
+}
+.fontSize6{
+  @include FontSize6;
+}
+
+.fontSize7{
+  @include FontSize7;
+}
+
+.fontSize8{
+  @include FontSize8;
+}
+.fontSize9{
+  @include FontSize9;
+}
+.fontSize10{
+  @include FontSize10;
+}
+
+.fontSize11{
+  @include FontSize11;
+}
+
+.fontSize12{
+  @include FontSize12;
+}
+
+.fontSize13{
+  @include FontSize13;
+}
+
+.fontSize14{
+  @include FontSize14;
+}
+
+.fontSize15{
+  @include FontSize15;
+}
