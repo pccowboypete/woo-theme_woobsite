@@ -5961,6 +5961,31 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 0px;
   margin: 0px; }
 
+p, a {
+  font-size: 2.5em; }
+
+table, td, th {
+  font-size: 1.5em;
+  padding: 5px;
+  border: 1px solid #222; }
+
+table {
+  width: auto;
+  margin-left: 30px;
+  margin-right: 30px; }
+
+tr th:first-child {
+  width: 15%;
+  background-color: #B2BEB5; }
+
+tr td:nth-child(3) {
+  background-color: #3B3C36; }
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #3B3C36; }
+
 nav#top-bar {
   background-color: #9966CC;
   width: 100% auto;

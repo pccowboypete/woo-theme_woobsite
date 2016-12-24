@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="row">
 		<div class="container">
-			
+			<?php get_template_part('template_parts/content-single-product-content', 'display'); ?>
 		</div><!-- END container -->
 	</div><!-- END row -->
 
