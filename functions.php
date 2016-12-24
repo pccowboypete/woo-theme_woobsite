@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 //Hook the XWP Library
-require_once 'XWP/XWP_Includes.php';
+require_once 'XWP/XWP_Setup.php';
 
 
 
