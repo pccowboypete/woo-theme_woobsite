@@ -25,12 +25,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/border-box-reset.css">
 
 	<!-- Bootstrap stylesheet -->
-	<!--
+	
 	 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/bootstrap/css/bootstrap.css">
-	 -->
+	
 
 	<!-- Default stylesheet -->
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+	
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Sriracha" rel="stylesheet"> <!-- font 2 and 3 -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> <!-- font 4 -->
 
 
 
@@ -50,15 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Header -->
 	<header>
 	    <div class="container-fluid">
-        	<h3>Header Yow Yow Yow</h3>
-			<p class="fontSize1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis.</p>
-			
-			
-			<?php 
-			$arg = array('theme_location' => 'primary');
-			
-			wp_nav_menu($arg);
-			?>
+        	
 			
 	    </div>
 	</header><!-- END Header -->

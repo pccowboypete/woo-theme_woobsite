@@ -1,0 +1,30 @@
+section#main-content{
+  background-color: $color9;
+
+  .left-bar{
+    background-color: $color11;
+
+  }
+
+  .center-content{
+    background-color: $color2;
+  }
+
+  .right-content{
+    background-color: $color4;
+    padding : 0px;
+    div{
+      height: 180px;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+  }
+
+  .left-bar,
+  .right-content,
+  .center-content{
+    min-height: 540px;
+  }
+
+}//END Section main-content

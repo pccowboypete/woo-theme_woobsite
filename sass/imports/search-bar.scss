@@ -1,0 +1,91 @@
+nav#search-bar{
+  background-color: $color6 ;
+
+  width : 100% auto;
+
+  overflow: hidden;
+
+  ul, li, a:link, a:visited{
+    padding : 0px;
+  }
+
+  .container{
+
+  }
+
+  .container div{
+    height : 60px;
+
+  }
+
+  .col-md-3{
+
+  }
+
+  .container div:first-child{
+    background-color: #222 ;
+    border : 1px solid #555;
+    text-align: left;
+    padding : 15px;
+  }
+
+  .container div:first-child span{
+    margin-right : 10px;
+  }
+
+  .container div:first-child a,
+  .container div:last-child a{
+    @include FontSize10;
+    text-decoration: none;
+    color : #eee;
+  }
+
+  .container div:last-child{
+    padding : 4px;
+  }
+  .container div:last-child a{
+    text-align: center;
+    .link-icon{
+      color : #222;
+      transition: color ease 0.5s;
+      -webkit-transition: color ease 0.5s;
+      -moz-transition: color ease 0.5s;
+    }
+
+
+    &:hover .link-icon{
+      color : $color6;
+      transition: color ease 0.5s;
+      -webkit-transition: color ease 0.5s;
+      -moz-transition: color ease 0.5s;
+    }
+  }
+
+  .badge-notify{
+   background:red;
+   position:relative;
+   top: -20px;
+   right: 15px;
+  }
+
+  .container div:last-child .link-icon{
+    margin : 0px -10px 0px -10px;
+    color : #222;
+    background-color : #efefef;
+    padding : 15px;
+    /* ###b. Border Radius compatibility fixes### */
+   -webkit-border-radius: 30px; /* Safari, Chrome and browsers using the Webkit engine */
+   -moz-border-radius: 30px; /* Firefox and other browsers using Mozilla's browser engine */
+   -o-border-radius: 30px; /* Opera */
+   -khtml-border-radius: 30px; /* Konqueror browser */
+   border-radius: 30px; /* default CSS */
+   /* this resolves border issues on IE */
+
+  }
+
+
+
+
+
+
+}

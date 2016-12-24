@@ -12,6 +12,13 @@ $color11 : #B5A642;
 $color12 : #800020;
 
 
+$fontFamily1 :  "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+$fontFamily2 :  'Josefin Sans', sans-serif;
+$fontFamily3 : 'Sriracha', cursive;
+$fontFamily4 : 'Lobster', cursive;
+
+
+
 .fontSize1{
   @include FontSize1;
 }

@@ -1,0 +1,13 @@
+header{
+  background-color:$color2;
+  min-height :250px;
+  background-image: url('imgs/header-shop.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+	-webkit-background-size : 100% 120%; /* Safari, Chrome and browsers using the Webkit engine */
+	-moz-background-size : 100% 120%;/* Firefox and other browsers using Mozilla's browser engine */
+	-o-background-size : 100% 120%; /* Opera */
+	-khtml-background-size : 100% 120%; /*Konqueror browser*/
+	background-size : 100% 120%;
+}

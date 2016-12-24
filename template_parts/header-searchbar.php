@@ -18,6 +18,36 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- Search Navigation Bar -->
   <nav id="search-bar">
-    <h3>Search Bar</h3>
-    <p class="fontSize1">Lorem ipsum dolsit amet, consectetuer adipiscing elit. Donec mollis.</p>
+    <div class="container">
+    	<div class="col-md-3">
+    		<a  href="#"><span class="glyphicon glyphicon-th-list"></span>All Departments</a>
+    	</div>
+    	
+    	<div class="col-md-6">
+    	</div>
+    	
+    	<div class="col-md-3">
+    		<a  href="#">
+    			<span class="glyphicon glyphicon-heart link-icon"></span>
+    			<span class="badge badge-notify">20</span>
+    		</a>
+    		
+    		<a  href="#">
+    			<span class="glyphicon glyphicon-retweet link-icon"></span>
+    			<span class="badge badge-notify">20</span>
+    		</a>
+    		
+    		<a  href="#">
+    			<span class="glyphicon glyphicon-shopping-cart link-icon"></span>
+    			<span class="badge badge-notify">20</span>
+    		</a>
+
+    	</div>
+    </div>
+    
+	<?php 
+		//$arg = array('theme_location' => 'primary');
+			
+		//wp_nav_menu($arg);
+	?>
   </nav><!-- END Search Navigation Bar -->

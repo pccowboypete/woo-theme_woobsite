@@ -7,6 +7,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 //Hook the XWP Library
 require_once 'XWP/XWP_Setup.php';
+//Hook the XWP_WooCommerce Library
+require_once 'XWP_WooCommerce/XWP_WooCommerce_SetUp.php';
 
 
 

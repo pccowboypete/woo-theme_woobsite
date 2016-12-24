@@ -27,6 +27,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<script src="<?php echo get_template_directory_uri(); ?>/assets/respond.js"></script>
 		<![endif]-->
 	<!-- END HTML5shiv.js and Respond.js -->
+	
+	<!-- Plugin JavaScript -->
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/jquery.easing.js"></script>
+
+
+    <!-- Theme JavaScript -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/pccowboy.js"></script>
 
 </div><!-- END main-wrapper -->
 </body>
