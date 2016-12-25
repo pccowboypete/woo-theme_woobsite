@@ -90,10 +90,8 @@ function highlightCurrentAnchor(selector){
 
 $(document).ready(function(){
 	$(".fade-section").children(".container").css('opacity', '0.0');
-	$('[data-toggle="popover"]').popover();
-	$('[data-toggle="popover"]').popover({
-	    container: 'body'
-	});
+	$('[data-toggle="tooltip"]').tooltip();
+	
 	
 	//plug collapseNavbar
 	collapseNavbar();

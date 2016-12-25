@@ -25,8 +25,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/border-box-reset.css">
 
 	<!-- Bootstrap stylesheet -->
-	
 	 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/bootstrap/css/bootstrap.css">
+	 
+	 <!-- Font Awesome stylesheet -->
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
 	
 
 	<!-- Default stylesheet -->

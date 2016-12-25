@@ -3,26 +3,12 @@ nav#search-bar{
 
   width : 100% auto;
 
-  overflow: hidden;
 
-  ul, li, a:link, a:visited{
-    padding : 0px;
-  }
-
-  .container{
-
-  }
-
-  .container div{
+  .container > div{
     height : 60px;
-
   }
 
-  .col-md-3{
-
-  }
-
-  .container div:first-child{
+  .container > div:first-child{
     background-color: #222 ;
     border : 1px solid #555;
     text-align: left;
@@ -42,16 +28,33 @@ nav#search-bar{
 
   .container div:last-child{
     padding : 4px;
+    text-align: right;
+    
   }
   .container div:last-child a{
-    text-align: center;
+
+    /* ###b. Border Radius compatibility fixes### */
+   -webkit-border-radius: 30px; /* Safari, Chrome and browsers using the Webkit engine */
+   -moz-border-radius: 30px; /* Firefox and other browsers using Mozilla's browser engine */
+   -o-border-radius: 30px; /* Opera */
+   -khtml-border-radius: 30px; /* Konqueror browser */
+   border-radius: 30px; /* default CSS */
+   /* this resolves border issues on IE */
+
+   width: 50px;
+   padding-top:12px;
+   padding-bottom : 5px;
+   background-color: #efefef;
+   margin-left: 2px;
+   margin-right : 2px;
+
     .link-icon{
+      margin : 0;
       color : #222;
       transition: color ease 0.5s;
       -webkit-transition: color ease 0.5s;
       -moz-transition: color ease 0.5s;
     }
-
 
     &:hover .link-icon{
       color : $color6;
@@ -66,26 +69,8 @@ nav#search-bar{
    position:relative;
    top: -20px;
    right: 15px;
+
+   margin : 0px;
   }
-
-  .container div:last-child .link-icon{
-    margin : 0px -10px 0px -10px;
-    color : #222;
-    background-color : #efefef;
-    padding : 15px;
-    /* ###b. Border Radius compatibility fixes### */
-   -webkit-border-radius: 30px; /* Safari, Chrome and browsers using the Webkit engine */
-   -moz-border-radius: 30px; /* Firefox and other browsers using Mozilla's browser engine */
-   -o-border-radius: 30px; /* Opera */
-   -khtml-border-radius: 30px; /* Konqueror browser */
-   border-radius: 30px; /* default CSS */
-   /* this resolves border issues on IE */
-
-  }
-
-
-
-
-
 
 }

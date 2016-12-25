@@ -27,18 +27,19 @@ if ( ! defined( 'ABSPATH' ) ) {
     	</div>
     	
     	<div class="col-md-3">
-    		<a  href="#">
+    		<a  href="#"  class="btn btn-default" title="Wishlist" data-toggle="tooltip" data-placement="right">
     			<span class="glyphicon glyphicon-heart link-icon"></span>
     			<span class="badge badge-notify">20</span>
+    			
     		</a>
     		
-    		<a  href="#">
+    		<a  href="#" class="btn btn-default" title="Retweet"  data-toggle="tooltip" data-placement="right">
     			<span class="glyphicon glyphicon-retweet link-icon"></span>
     			<span class="badge badge-notify">20</span>
     		</a>
     		
-    		<a  href="#">
-    			<span class="glyphicon glyphicon-shopping-cart link-icon"></span>
+    		<a  href="#" class="btn btn-default" title="Cart"  data-toggle="tooltip" data-placement="right">
+    			<span class="glyphicon glyphicon-shopping-cart  link-icon"></span>
     			<span class="badge badge-notify">20</span>
     		</a>
 
