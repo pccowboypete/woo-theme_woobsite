@@ -1,76 +1,136 @@
 nav#search-bar{
   background-color: $color6 ;
-
   width : 100% auto;
 
+  .search-left{
+    padding-right: 0px;
+  }
+  .search-center{
+    
+  }
+  .search-right{
 
-  .container > div{
-    height : 60px;
   }
 
-  .container > div:first-child{
-    background-color: #222 ;
-    border : 1px solid #555;
+  .search-left-wrapper{
+    background-color: #222;
+    border : 1px solid #000;
+    height: 50px;
     text-align: left;
-    padding : 15px;
+    padding : 10px;
+
   }
 
-  .container div:first-child span{
+  .search-left-wrapper span{
     margin-right : 10px;
   }
 
-  .container div:first-child a,
-  .container div:last-child a{
-    @include FontSize10;
-    text-decoration: none;
-    color : #eee;
+  .search-left-wrapper a{
+    @include FontSize2rem;
   }
 
-  .container div:last-child{
-    padding : 4px;
+  .search-right-wrapper{
     text-align: right;
-    
+    padding-top: 5px;
+    padding-bottom: 5px;
+
   }
-  .container div:last-child a{
+
+  .search-right-wrapper a{
+    @include FontSize2rem;
 
     /* ###b. Border Radius compatibility fixes### */
-   -webkit-border-radius: 30px; /* Safari, Chrome and browsers using the Webkit engine */
-   -moz-border-radius: 30px; /* Firefox and other browsers using Mozilla's browser engine */
-   -o-border-radius: 30px; /* Opera */
-   -khtml-border-radius: 30px; /* Konqueror browser */
-   border-radius: 30px; /* default CSS */
+   -webkit-border-radius: 60px; /* Safari, Chrome and browsers using the Webkit engine */
+   -moz-border-radius: 60px; /* Firefox and other browsers using Mozilla's browser engine */
+   -o-border-radius: 60px; /* Opera */
+   -khtml-border-radius: 60px; /* Konqueror browser */
+   border-radius: 60px; /* default CSS */
    /* this resolves border issues on IE */
 
    width: 50px;
-   padding-top:12px;
-   padding-bottom : 5px;
+   padding-top:6px;
+   padding-bottom : 4px;
+   padding-left: 14px;
+
    background-color: #efefef;
    margin-left: 2px;
    margin-right : 2px;
 
-    .link-icon{
-      margin : 0;
-      color : #222;
-      transition: color ease 0.5s;
-      -webkit-transition: color ease 0.5s;
-      -moz-transition: color ease 0.5s;
+   .link-icon{
+     margin : 0;
+     color : #222;
+     transition: color ease 0.5s;
+     -webkit-transition: color ease 0.5s;
+     -moz-transition: color ease 0.5s;
+   }
+
+   &:hover .link-icon{
+     color : $color6;
+     transition: color ease 0.5s;
+     -webkit-transition: color ease 0.5s;
+     -moz-transition: color ease 0.5s;
+   }
+
+   .badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 15px;
+
+    margin : 0px;
+   }
+
+ }//END .right-wrapper a
+
+  .search-right-wrapper a,
+  .search-left-wrapper a{
+    text-decoration: none;
+    color : #eee;
+  }
+
+
+  .search-center-wrapper{
+    padding : 5px;
+
+
+    .btn, input{
+      height: 40px;
+      @include FontSize1_6rem;
     }
 
-    &:hover .link-icon{
-      color : $color6;
-      transition: color ease 0.5s;
-      -webkit-transition: color ease 0.5s;
-      -moz-transition: color ease 0.5s;
+    .search-dropdown{
+      /* ###b. Border Radius compatibility fixes### */
+     -webkit-border-radius: 20px 0px 0px 20px; /* Safari, Chrome and browsers using the Webkit engine */
+     -moz-border-radius:20px 0px 0px 20px; /* Firefox and other browsers using Mozilla's browser engine */
+     -o-border-radius: 20px 0px 0px 20px; /* Opera */
+     -khtml-border-radius: 20px 0px 0px 20px; /* Konqueror browser */
+     border-radius: 20px 0px 0px 20px; /* default CSS */
+     /* this resolves border issues on IE */
+
+     width : 150px;
+
+     .dropdown-menu li a
+     {
+       @include FontSize1rem;
+     }
+    }
+
+    .search-button{
+      /* ###b. Border Radius compatibility fixes### */
+     -webkit-border-radius: 0px 20px 20px 0px; /* Safari, Chrome and browsers using the Webkit engine */
+     -moz-border-radius: 0px 20px 20px 0px; /* Firefox and other browsers using Mozilla's browser engine */
+     -o-border-radius: 0px 20px 20px 0px; /* Opera */
+     -khtml-border-radius: 0px 20px 20px 0px; /* Konqueror browser */
+     border-radius: 0px 20px 20px 0px; /* default CSS */
+     /* this resolves border issues on IE */
+
+     width : 80px;
+     color : #fefefe;
+     background-color: #333;
+     border-color: #333;
+
     }
   }
 
-  .badge-notify{
-   background:red;
-   position:relative;
-   top: -20px;
-   right: 15px;
 
-   margin : 0px;
-  }
-
-}
+}//END nav#search-bar

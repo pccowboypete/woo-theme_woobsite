@@ -35,6 +35,7 @@ require_once 'utilities/XWP_Util.php';
 
 
 //HTMLHelpers
+require_once 'HTMLHelpers/XWP_MenuHTMLHelper.php';
 
 
 

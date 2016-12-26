@@ -11,156 +11,6 @@ Version: 1.3
  *
  *
  */
-.fontSize1 {
-  font-size: 2em;
-}
-
-@media (max-width: 768px) {
-  .fontSize1 {
-    font-size: 2em;
-  }
-}
-
-.fontSize2 {
-  font-size: 2.2em;
-}
-
-@media (max-width: 768px) {
-  .fontSize2 {
-    font-size: 2.2em;
-  }
-}
-
-.fontSize3 {
-  font-size: 2.4em;
-}
-
-@media (max-width: 768px) {
-  .fontSize3 {
-    font-size: 2.4em;
-  }
-}
-
-.fontSize4 {
-  font-size: 2.6em;
-}
-
-@media (max-width: 768px) {
-  .fontSize4 {
-    font-size: 2.6em;
-  }
-}
-
-.fontSize5 {
-  font-size: 2.7em;
-}
-
-@media (max-width: 768px) {
-  .fontSize5 {
-    font-size: 2.7em;
-  }
-}
-
-.fontSize6 {
-  font-size: 2.8em;
-}
-
-@media (max-width: 768px) {
-  .fontSize6 {
-    font-size: 2.8em;
-  }
-}
-
-.fontSize7 {
-  font-size: 3em;
-}
-
-@media (max-width: 768px) {
-  .fontSize7 {
-    font-size: 3em;
-  }
-}
-
-.fontSize8 {
-  font-size: 3.2em;
-}
-
-@media (max-width: 768px) {
-  .fontSize8 {
-    font-size: 3.2em;
-  }
-}
-
-.fontSize9 {
-  font-size: 3.4em;
-}
-
-@media (max-width: 768px) {
-  .fontSize9 {
-    font-size: 3.4em;
-  }
-}
-
-.fontSize10 {
-  font-size: 3.6em;
-}
-
-@media (max-width: 768px) {
-  .fontSize10 {
-    font-size: 3.6em;
-  }
-}
-
-.fontSize11 {
-  font-size: 3.8em;
-}
-
-@media (max-width: 768px) {
-  .fontSize11 {
-    font-size: 3.8em;
-  }
-}
-
-.fontSize12 {
-  font-size: 4em;
-}
-
-@media (max-width: 768px) {
-  .fontSize12 {
-    font-size: 4em;
-  }
-}
-
-.fontSize13 {
-  font-size: 4.2em;
-}
-
-@media (max-width: 768px) {
-  .fontSize13 {
-    font-size: 4.2em;
-  }
-}
-
-.fontSize14 {
-  font-size: 4.4em;
-}
-
-@media (max-width: 768px) {
-  .fontSize14 {
-    font-size: 4.4em;
-  }
-}
-
-.fontSize15 {
-  font-size: 4.6em;
-}
-
-@media (max-width: 768px) {
-  .fontSize15 {
-    font-size: 4.6em;
-  }
-}
-
 body {
   font-size: 62.5%;
   background-color: #ccc;
@@ -173,7 +23,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 p, a {
-  font-size: 2.5em;
+  font-size: 20px;
+  font-size: 2rem;
 }
 
 table, td, th {
@@ -270,13 +121,8 @@ section#section2 .container div {
 .navbar-custom .navbar-toggle {
   color: white;
   background-color: #ddd;
-  font-size: 2.4em;
-}
-
-@media (max-width: 768px) {
-  .navbar-custom .navbar-toggle {
-    font-size: 2.4em;
-  }
+  font-size: 30px;
+  font-size: 3rem;
 }
 
 .navbar-custom .navbar-toggle:focus,
@@ -290,13 +136,8 @@ section#section2 .container div {
 
 .navbar-custom .navbar-brand .site-caption {
   font-family: "Lobster", cursive;
-  font-size: 2em;
-}
-
-@media (max-width: 768px) {
-  .navbar-custom .navbar-brand .site-caption {
-    font-size: 2em;
-  }
+  font-size: 30px;
+  font-size: 3rem;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -319,27 +160,30 @@ section#section2 .container div {
   border-radius: 1px;
 }
 
+.navbar-custom .nav a {
+  font-size: 26px;
+  font-size: 2.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
 .navbar-custom .nav li a:link,
 .navbar-custom .nav li a:visited {
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  font-size: 3.6em;
-}
-
-@media (max-width: 768px) {
-  .navbar-custom .nav li a:link,
-  .navbar-custom .nav li a:visited {
-    font-size: 3.6em;
-  }
 }
 
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
   outline: none;
-  background-color: #555;
+  background-color: #fefefe;
+  color: #000;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  transition: background 0.5s ease;
 }
 
 .navbar-custom .nav li a:focus,
@@ -349,29 +193,21 @@ section#section2 .container div {
 }
 
 .navbar-custom .nav li.active {
-  background-color: #555;
-  -webkit-transition: background 0.5s ease;
-  -moz-transition: background 0.5s ease;
-  transition: background 0.5s ease;
+  background-color: #fefefe;
 }
 
 .navbar-custom .nav li.active a {
-  background-color: #555;
+  background-color: #fefefe;
 }
 
 .navbar-custom .nav li.active a:hover {
   color: white;
-  background-color: #555;
+  background-color: #fefefe;
 }
 
 .navbar-custom .menu-button {
-  font-size: 2.4em;
-}
-
-@media (max-width: 768px) {
-  .navbar-custom .menu-button {
-    font-size: 2.4em;
-  }
+  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 @media (min-width: 768px) {
@@ -435,62 +271,58 @@ nav#search-bar {
   width: 100% auto;
 }
 
-nav#search-bar .container > div {
-  height: 60px;
+nav#search-bar .search-left {
+  padding-right: 0px;
 }
 
-nav#search-bar .container > div:first-child {
+nav#search-bar .search-left-wrapper {
   background-color: #222;
-  border: 1px solid #555;
+  border: 1px solid #000;
+  height: 50px;
   text-align: left;
-  padding: 15px;
+  padding: 10px;
 }
 
-nav#search-bar .container div:first-child span {
+nav#search-bar .search-left-wrapper span {
   margin-right: 10px;
 }
 
-nav#search-bar .container div:first-child a,
-nav#search-bar .container div:last-child a {
-  font-size: 3.6em;
-  text-decoration: none;
-  color: #eee;
+nav#search-bar .search-left-wrapper a {
+  font-size: 20px;
+  font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-  nav#search-bar .container div:first-child a,
-  nav#search-bar .container div:last-child a {
-    font-size: 3.6em;
-  }
-}
-
-nav#search-bar .container div:last-child {
-  padding: 4px;
+nav#search-bar .search-right-wrapper {
   text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-nav#search-bar .container div:last-child a {
+nav#search-bar .search-right-wrapper a {
+  font-size: 20px;
+  font-size: 2rem;
   /* ###b. Border Radius compatibility fixes### */
-  -webkit-border-radius: 30px;
+  -webkit-border-radius: 60px;
   /* Safari, Chrome and browsers using the Webkit engine */
-  -moz-border-radius: 30px;
+  -moz-border-radius: 60px;
   /* Firefox and other browsers using Mozilla's browser engine */
-  -o-border-radius: 30px;
+  -o-border-radius: 60px;
   /* Opera */
-  -khtml-border-radius: 30px;
+  -khtml-border-radius: 60px;
   /* Konqueror browser */
-  border-radius: 30px;
+  border-radius: 60px;
   /* default CSS */
   /* this resolves border issues on IE */
   width: 50px;
-  padding-top: 12px;
-  padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  padding-left: 14px;
   background-color: #efefef;
   margin-left: 2px;
   margin-right: 2px;
 }
 
-nav#search-bar .container div:last-child a .link-icon {
+nav#search-bar .search-right-wrapper a .link-icon {
   margin: 0;
   color: #222;
   transition: color ease 0.5s;
@@ -498,14 +330,14 @@ nav#search-bar .container div:last-child a .link-icon {
   -moz-transition: color ease 0.5s;
 }
 
-nav#search-bar .container div:last-child a:hover .link-icon {
+nav#search-bar .search-right-wrapper a:hover .link-icon {
   color: #9966CC;
   transition: color ease 0.5s;
   -webkit-transition: color ease 0.5s;
   -moz-transition: color ease 0.5s;
 }
 
-nav#search-bar .badge-notify {
+nav#search-bar .search-right-wrapper a .badge-notify {
   background: red;
   position: relative;
   top: -20px;
@@ -513,8 +345,64 @@ nav#search-bar .badge-notify {
   margin: 0px;
 }
 
+nav#search-bar .search-right-wrapper a,
+nav#search-bar .search-left-wrapper a {
+  text-decoration: none;
+  color: #eee;
+}
+
+nav#search-bar .search-center-wrapper {
+  padding: 5px;
+}
+
+nav#search-bar .search-center-wrapper .btn, nav#search-bar .search-center-wrapper input {
+  height: 40px;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+nav#search-bar .search-center-wrapper .search-dropdown {
+  /* ###b. Border Radius compatibility fixes### */
+  -webkit-border-radius: 20px 0px 0px 20px;
+  /* Safari, Chrome and browsers using the Webkit engine */
+  -moz-border-radius: 20px 0px 0px 20px;
+  /* Firefox and other browsers using Mozilla's browser engine */
+  -o-border-radius: 20px 0px 0px 20px;
+  /* Opera */
+  -khtml-border-radius: 20px 0px 0px 20px;
+  /* Konqueror browser */
+  border-radius: 20px 0px 0px 20px;
+  /* default CSS */
+  /* this resolves border issues on IE */
+  width: 150px;
+}
+
+nav#search-bar .search-center-wrapper .search-dropdown .dropdown-menu li a {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+nav#search-bar .search-center-wrapper .search-button {
+  /* ###b. Border Radius compatibility fixes### */
+  -webkit-border-radius: 0px 20px 20px 0px;
+  /* Safari, Chrome and browsers using the Webkit engine */
+  -moz-border-radius: 0px 20px 20px 0px;
+  /* Firefox and other browsers using Mozilla's browser engine */
+  -o-border-radius: 0px 20px 20px 0px;
+  /* Opera */
+  -khtml-border-radius: 0px 20px 20px 0px;
+  /* Konqueror browser */
+  border-radius: 0px 20px 20px 0px;
+  /* default CSS */
+  /* this resolves border issues on IE */
+  width: 80px;
+  color: #fefefe;
+  background-color: #333;
+  border-color: #333;
+}
+
 section#main-content {
-  background-color: #BF4F51;
+  background-color: #fefefe;
 }
 
 section#main-content .left-bar {
@@ -540,4 +428,61 @@ section#main-content .left-bar,
 section#main-content .right-content,
 section#main-content .center-content {
   min-height: 540px;
+}
+
+section#main-content .single-left-wrapper {
+  border: 1px solid #ddd;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+section#main-content .single-left-wrapper ul, section#main-content .single-left-wrapper li, section#main-content .single-left-wrapper a {
+  padding: 0px;
+  margin: 0px;
+}
+
+section#main-content .single-left-wrapper li {
+  list-style: none;
+}
+
+section#main-content .single-left-wrapper li a {
+  display: block;
+  border: 1px solid #000;
+  padding: 8px 8px 8px 15px;
+  background-color: #fefefe;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+section#main-content .single-left-wrapper li a:hover {
+  background-color: #ddd;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+section#main-content .single-left-wrapper li a:hover i {
+  padding-right: 20px;
+  -webkit-transition: padding 0.5s ease;
+  -moz-transition: padding 0.5s ease;
+  transition: padding 0.5s ease;
+}
+
+section#main-content .single-left-wrapper li a i {
+  padding-right: 0px;
+  -webkit-transition: padding 0.5s ease;
+  -moz-transition: padding 0.5s ease;
+  transition: padding 0.5s ease;
+}
+
+section#main-content .single-main-wrapper {
+  background-color: #999;
+  margin: 0px;
+  padding: 0px;
+}
+
+section#main-content .single-left {
+  padding-right: 0px;
 }

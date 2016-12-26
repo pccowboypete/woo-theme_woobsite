@@ -20,11 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- Section main-content  -->
 <section  id="main-content">
 
-	<div class="row">
-		<div class="container">
+	
+		<div class="container-fluid">
 			<?php get_template_part('template_parts/content-single-product-content', 'display'); ?>
 		</div><!-- END container -->
-	</div><!-- END row -->
+	
 
 </section><!-- END Section main-content  -->
 

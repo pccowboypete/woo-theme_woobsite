@@ -38,28 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Sale</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    
-                    
+                    <?php echo XWP_MenuHTMLHelper::get_nav_menu_for_frontpage('primary', 0, false, false)?>
                     
                 </ul>
             </div>
