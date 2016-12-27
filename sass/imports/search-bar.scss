@@ -5,19 +5,13 @@ nav#search-bar{
   .search-left{
     padding-right: 0px;
   }
-  .search-center{
-    
-  }
-  .search-right{
-
-  }
 
   .search-left-wrapper{
     background-color: #222;
     border : 1px solid #000;
     height: 50px;
     text-align: left;
-    padding : 10px;
+    padding : 14px;
 
   }
 
@@ -26,13 +20,13 @@ nav#search-bar{
   }
 
   .search-left-wrapper a{
-    @include FontSize2rem;
+    @include FontSize1_8rem;
   }
 
   .search-right-wrapper{
     text-align: right;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 
   }
 
@@ -48,7 +42,7 @@ nav#search-bar{
    /* this resolves border issues on IE */
 
    width: 50px;
-   padding-top:6px;
+   padding-top:8px;
    padding-bottom : 4px;
    padding-left: 14px;
 
@@ -93,27 +87,44 @@ nav#search-bar{
     padding : 5px;
 
 
-    .btn, input{
-      height: 40px;
+    .search-dropdown button,
+    .search-text,
+    .search-button{
+      height: 40px !important;
+
+    }
+
+    .search-dropdown,
+    .search-text,
+    .search-button{
       @include FontSize1_6rem;
     }
 
+
     .search-dropdown{
-      /* ###b. Border Radius compatibility fixes### */
-     -webkit-border-radius: 20px 0px 0px 20px; /* Safari, Chrome and browsers using the Webkit engine */
-     -moz-border-radius:20px 0px 0px 20px; /* Firefox and other browsers using Mozilla's browser engine */
-     -o-border-radius: 20px 0px 0px 20px; /* Opera */
-     -khtml-border-radius: 20px 0px 0px 20px; /* Konqueror browser */
-     border-radius: 20px 0px 0px 20px; /* default CSS */
-     /* this resolves border issues on IE */
+        button{
+          /* ###b. Border Radius compatibility fixes### */
+         -webkit-border-radius: 20px 0px 0px 20px; /* Safari, Chrome and browsers using the Webkit engine */
+         -moz-border-radius:20px 0px 0px 20px; /* Firefox and other browsers using Mozilla's browser engine */
+         -o-border-radius: 20px 0px 0px 20px; /* Opera */
+         -khtml-border-radius: 20px 0px 0px 20px; /* Konqueror browser */
+         border-radius: 20px 0px 0px 20px; /* default CSS */
+         /* this resolves border issues on IE */
 
-     width : 150px;
 
-     .dropdown-menu li a
-     {
-       @include FontSize1rem;
-     }
-    }
+         width : 150px;
+        }
+
+       a{
+
+        @include FontSize1_6rem;
+       }
+
+    }//END search-dropdown
+
+    .search-text{
+
+    }//END Search text
 
     .search-button{
       /* ###b. Border Radius compatibility fixes### */
@@ -124,13 +135,17 @@ nav#search-bar{
      border-radius: 0px 20px 20px 0px; /* default CSS */
      /* this resolves border issues on IE */
 
+
      width : 80px;
      color : #fefefe;
      background-color: #333;
      border-color: #333;
 
-    }
-  }
+   }//END Search button
+
+
+  }//END Search center wrapper
+
 
 
 }//END nav#search-bar

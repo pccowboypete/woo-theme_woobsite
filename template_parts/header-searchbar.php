@@ -30,8 +30,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	    		<div class="input-group">
 			      
 			      <!-- Dropdown -->
-			      <div class="input-group-btn">
-			        <button type="button" class="btn btn-default dropdown-toggle search-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+			      <div class="input-group-btn search-dropdown">
+			        <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
 			        <ul class="dropdown-menu">
 			          <li><a href="#">Action</a></li>
 			          <li><a href="#">Another action</a></li>
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			      </div><!-- /btn-group -->
 			      
 			      <!-- Text field -->
-			      <input type="text" class="form-control" aria-label="..." placeholder="Search what you want!">
+			      <input type="text" class="form-control search-text" aria-label="..." placeholder="Search what you want!">
 			      
 			      <!-- Search button -->
 			      <span class="input-group-btn">

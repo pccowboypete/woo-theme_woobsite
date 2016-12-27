@@ -31,7 +31,7 @@ section#main-content{
 
   ///////////////////////////
   .single-left-wrapper{
-    border : 1px solid #ddd;
+
     margin: 0px;
     padding: 0px;
     text-align: left;
@@ -46,9 +46,17 @@ section#main-content{
     }
 
     li a{
+      @include FontSize1_6rem;
+      position: relative;
       display: block;
-      border: 1px solid #000;
+      border-bottom : 1px solid #eee  ;
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee;
       padding : 8px 8px 8px 15px;
+
+      &:first-child{
+        border-top : 1px solid #eee  ;
+      }
 
       background-color: #fefefe;
       -webkit-transition: background 0.5s ease;
@@ -56,31 +64,39 @@ section#main-content{
       transition: background 0.5s ease;
 
       &:hover{
-        background-color: #ddd;
+        background-color: #efefef;
         -webkit-transition: background 0.5s ease;
         -moz-transition: background 0.5s ease;
         transition: background 0.5s ease;
       }
-      &:hover i{
-        padding-right : 20px;
+      &:hover .link-icon{
+        padding-right : 30px;
 
         -webkit-transition: padding 0.5s ease;
         -moz-transition: padding 0.5s ease;
         transition: padding 0.5s ease;
       }
 
-      i{
-        padding-right : 0px;
+      .link-icon{
+        padding-right : 10px;
         -webkit-transition: padding 0.5s ease;
         -moz-transition: padding 0.5s ease;
         transition: padding 0.5s ease;
       }
+
+      .chevron-right{
+        position: absolute;
+        right : 10px;
+        top: 15px;
+      }
+
+
     }
 
   }
 
   .single-main-wrapper{
-    background-color: #999;
+    background-color: #efefef;
     margin: 0px;
     padding: 0px;
   }

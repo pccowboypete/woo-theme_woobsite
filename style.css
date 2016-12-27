@@ -280,7 +280,7 @@ nav#search-bar .search-left-wrapper {
   border: 1px solid #000;
   height: 50px;
   text-align: left;
-  padding: 10px;
+  padding: 14px;
 }
 
 nav#search-bar .search-left-wrapper span {
@@ -288,14 +288,14 @@ nav#search-bar .search-left-wrapper span {
 }
 
 nav#search-bar .search-left-wrapper a {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 nav#search-bar .search-right-wrapper {
   text-align: right;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 
 nav#search-bar .search-right-wrapper a {
@@ -314,7 +314,7 @@ nav#search-bar .search-right-wrapper a {
   /* default CSS */
   /* this resolves border issues on IE */
   width: 50px;
-  padding-top: 6px;
+  padding-top: 8px;
   padding-bottom: 4px;
   padding-left: 14px;
   background-color: #efefef;
@@ -355,13 +355,20 @@ nav#search-bar .search-center-wrapper {
   padding: 5px;
 }
 
-nav#search-bar .search-center-wrapper .btn, nav#search-bar .search-center-wrapper input {
-  height: 40px;
+nav#search-bar .search-center-wrapper .search-dropdown button,
+nav#search-bar .search-center-wrapper .search-text,
+nav#search-bar .search-center-wrapper .search-button {
+  height: 40px !important;
+}
+
+nav#search-bar .search-center-wrapper .search-dropdown,
+nav#search-bar .search-center-wrapper .search-text,
+nav#search-bar .search-center-wrapper .search-button {
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-nav#search-bar .search-center-wrapper .search-dropdown {
+nav#search-bar .search-center-wrapper .search-dropdown button {
   /* ###b. Border Radius compatibility fixes### */
   -webkit-border-radius: 20px 0px 0px 20px;
   /* Safari, Chrome and browsers using the Webkit engine */
@@ -377,9 +384,9 @@ nav#search-bar .search-center-wrapper .search-dropdown {
   width: 150px;
 }
 
-nav#search-bar .search-center-wrapper .search-dropdown .dropdown-menu li a {
-  font-size: 10px;
-  font-size: 1rem;
+nav#search-bar .search-center-wrapper .search-dropdown a {
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 nav#search-bar .search-center-wrapper .search-button {
@@ -431,7 +438,6 @@ section#main-content .center-content {
 }
 
 section#main-content .single-left-wrapper {
-  border: 1px solid #ddd;
   margin: 0px;
   padding: 0px;
   text-align: left;
@@ -447,8 +453,13 @@ section#main-content .single-left-wrapper li {
 }
 
 section#main-content .single-left-wrapper li a {
+  font-size: 16px;
+  font-size: 1.6rem;
+  position: relative;
   display: block;
-  border: 1px solid #000;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
   padding: 8px 8px 8px 15px;
   background-color: #fefefe;
   -webkit-transition: background 0.5s ease;
@@ -456,29 +467,39 @@ section#main-content .single-left-wrapper li a {
   transition: background 0.5s ease;
 }
 
+section#main-content .single-left-wrapper li a:first-child {
+  border-top: 1px solid #eee;
+}
+
 section#main-content .single-left-wrapper li a:hover {
-  background-color: #ddd;
+  background-color: #efefef;
   -webkit-transition: background 0.5s ease;
   -moz-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
 
-section#main-content .single-left-wrapper li a:hover i {
-  padding-right: 20px;
+section#main-content .single-left-wrapper li a:hover .link-icon {
+  padding-right: 30px;
   -webkit-transition: padding 0.5s ease;
   -moz-transition: padding 0.5s ease;
   transition: padding 0.5s ease;
 }
 
-section#main-content .single-left-wrapper li a i {
-  padding-right: 0px;
+section#main-content .single-left-wrapper li a .link-icon {
+  padding-right: 10px;
   -webkit-transition: padding 0.5s ease;
   -moz-transition: padding 0.5s ease;
   transition: padding 0.5s ease;
+}
+
+section#main-content .single-left-wrapper li a .chevron-right {
+  position: absolute;
+  right: 10px;
+  top: 15px;
 }
 
 section#main-content .single-main-wrapper {
-  background-color: #999;
+  background-color: #efefef;
   margin: 0px;
   padding: 0px;
 }
